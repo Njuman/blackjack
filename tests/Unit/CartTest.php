@@ -13,7 +13,7 @@ class CardTest extends TestCase
      */
     public function testCardValue()
     {
-        $file = file_get_contents('../tests.json');
+        $file = file_get_contents(__DIR__ . '/../tests.json');
 
         $testCases = json_decode($file, true);
 
